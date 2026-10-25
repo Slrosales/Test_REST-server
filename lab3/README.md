@@ -1,5 +1,9 @@
 # Lab 3 — JavaScript Testing Exercises
 
+**Authors**
+*   Laura Sofía Gómez Rosales  [![GitHub Slrosales](https://img.shields.io/badge/by-Slrosales-purple)](https://github.com/Slrosales)
+*   Maria Camila Pinzon Niño [![GitHub mcnino15](https://img.shields.io/badge/by-mcnino15-red)](https://github.com/mcnino15)
+
 Three independent exercises for practising unit tests, coverage, browser tests,
 end-to-end tests, bundling, and documentation.
 
@@ -135,15 +139,3 @@ Note: `cypress.config.js` uses the `mochawesome` reporter, which is not listed i
 ```sh
 npm install --save-dev mochawesome
 ```
-
----
-
-## Notes
-
-- `node_modules/` and `coverage/` are **not** committed; run `npm install` in each
-  subproject before executing it.
-- `lab3/3-chess/dist/chess.js` is intentionally tracked because the web demo loads
-  it.
-- Port `8080` is also used by the Lab 2 native server. Do not run
-  `npm run serve` from chess and Lab 2's `npm start` at the same time.
-- The factorial test file uses `it.only`; only the marked tests run under Mocha.
