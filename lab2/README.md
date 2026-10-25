@@ -10,7 +10,7 @@ Two implementations live side by side:
 
 | Implementation | Location | Port | Entry point |
 | --- | --- | --- | --- |
-| Native `node:http` + `tiny-router` | repository root | `8080` | `index.js` |
+| Native `node:http` + `tiny-router` | `lab2/` | `8080` | `lab2/index.js` |
 | Original Express.js version | `express/` | `3000` | `express/index.js` |
 
 Both read and write the same `data.json`.
@@ -69,7 +69,7 @@ ES Modules are enabled by `"type": "module"` in `package.json`, so the project u
 
 ```sh
 git clone https://github.com/Slrosales/Minimal_REST-server.git
-cd Minimal_REST-server
+cd Minimal_REST-server/lab2
 npm install
 ```
 
@@ -215,7 +215,7 @@ Example `GET /` response:
 ## Repository structure
 
 ```text
-Minimal_REST-server/
+lab2/
 ├── index.js                     # native app: route table + start (8080)
 ├── data.js                      # loadData / saveData for the app
 ├── data.json                    # the Mosig dataset (shared by both apps)
@@ -439,8 +439,8 @@ This is a practice lab, so:
 | --- | --- | --- |
 | `EADDRINUSE` on `8080`/`3000` | an older server is still running | stop it with `Ctrl+C` or `kill <pid>` |
 | Response does not reflect your edits | Node loaded the old file | restart the server |
-| `Cannot find package 'tiny-router'` | dependencies were not installed | run `npm install` in the repository root |
-| `ENOENT ... data.json` | the data file is missing or was moved | keep `data.json` next to `data.js` in the repository root |
+| `Cannot find package 'tiny-router'` | dependencies were not installed | run `npm install` in `lab2/` |
+| `ENOENT ... data.json` | the data file is missing or was moved | keep `data.json` next to `data.js` in `lab2/` |
 | Request hangs forever | a handler did not send a response | always call `sendJson`/`res.end()` |
 | `req.body` is `undefined` (Express) | missing `Content-Type: application/json` | send the header or use `bodyParser.urlencoded(...)` |
 | `Invalid JSON payload` | malformed JSON in the request | validate the body before sending |
