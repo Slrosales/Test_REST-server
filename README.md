@@ -1,18 +1,8 @@
 # Minimal REST Server
 
-Course projects for **Lab 2** and **Lab 3**, kept in separate folders so each lab
-can be run and reviewed independently.
-
-```text
-Minimal_REST-server/
-├── lab2/    REST server for the Mosig department (Express + native node:http)
-└── lab3/    JavaScript testing exercises (money, factorial, chess)
-```
-
 **Authors**
-
-- Laura Sofía Gómez Rosales — [Slrosales](https://github.com/Slrosales)
-- Maria Camila Pinzon Niño — [mcnino15](https://github.com/mcnino15)
+*   Laura Sofía Gómez Rosales  [![GitHub Slrosales](https://img.shields.io/badge/by-Slrosales-purple)](https://github.com/Slrosales)
+*   Maria Camila Pinzon Niño [![GitHub mcnino15](https://img.shields.io/badge/by-mcnino15-red)](https://github.com/mcnino15)
 
 ---
 
@@ -73,11 +63,3 @@ Lab 2 native server.
 The `node_modules/` and `coverage/` folders from the Lab 3 branch are intentionally
 not committed. Run `npm install` inside each exercise before using it.
 
----
-
-## Notes
-
-- Each lab is self-contained; install dependencies from the folder you want to run.
-- Lab 2 keeps its own README, data, tests-by-curl instructions, and documentation.
-- Generated output (`node_modules/`, `coverage/`, `dist/`) is ignored by git; the
-  current `lab3/3-chess/dist/` file is kept because the browser demo references it.
